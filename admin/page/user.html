@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="container-one">
+            <div id="logo"><img src="../../images/images/logo.png" alt="" id="image-logo"></div>
+            <div id="name"></div>
+            <div id="avatar" onclick="logOutAdmin()"><img src="../../images/images/user.png" alt=""></div>
+        </div>
+        <div id="container-two">
+            <div id="container-two-left">
+                <div id="user" onclick="">User</div>
+                <div id="category" onclick="category()">Category</div>
+                <div id="product" onclick="product()">Product</div>
+                <div id="bill" onclick="bill()">Bill</div>
+            </div>
+            <div id="container-two-right">
+                <table border="1px" cellpadding="10px" cellspacing="10px">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Email</th>
+                            <th>Image</th>
+                            <th>Status</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="../js/user.js"></script>
+</body>
+
+</html>

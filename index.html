@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+
+            <div class="ikidsclothing">
+                <img src="./images/images/logo.png" alt="nameshop">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>Trang chủ</li>
+                    <li>Giới thiệu</li>
+                    <li>Sản phẩm</li><span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <li>Tin tức</li>
+
+                    <a href="./user/page/bills-user.html" class="hoadon">Hóa đơn</a>
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <img src="./images/images/icon-search.png" alt="">
+            </div>
+
+            <div class="img-signin">
+                <img id="image" src="./images/images/user.png" alt="">
+
+                <div id="div-in-signin"></div>
+
+                <div id="form-changePassword"></div>
+
+            </div>
+
+            <div class="img-cart" onclick="renderCart()">
+                <img src="./images/images/icon-cart.png" alt="">
+            </div>
+
+            <div class="cart-text">
+                <div>Giỏ hàng</div>
+                <div id="thongbao">(thông báo)</div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/images/slider_1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/images/slider_2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-one">
+                <a href="#div-content" class="menuProduct">
+                    <div id="menuProduct">Danh mục sản phẩm</div>
+                </a>
+                <div id="category"></div>
+            </div>
+            <div class="content-two" id="render_by_category"></div>
+        </div>
+
+        <div class="content-plus">
+            <h1>NEW FASHION 2023</h1>
+            <div id="div-content"></div>
+            <div id="perpage">
+                <span onclick="toPrevPage()" class="material-symbols-outlined">arrow_back_ios_new</span>
+                <span id="div2"></span>
+                <span onclick="toNextPage()" class="material-symbols-outlined">arrow_forward_ios</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-one">
+                <div class="footer-one-one">
+                    <img src="./images/images/logo.png" alt="">
+                    <div class="address">Địa chỉ : Hạ Long - Quảng Ninh</div>
+                    <div class="phone">Điện thoại : 098.888.9999</div>
+                    <div class="fax">Fax : 3804 52 6750</div>
+                    <div class="email">Email : thuanqn@gmail.com</div>
+                </div>
+                <div class="test">
+                    <div>
+                        <div class="div1">Về chúng tôi</div>
+                        <div class="trangchu">Trang chủ</div>
+                        <div class="gioithieu">Giới thiệu</div>
+                        <div class="gioithieu">Sản phẩm</div>
+                        <div class="gioithieu">Tin tức</div>
+                        <div class="gioithieu">Liên hệ</div>
+                    </div>
+
+                    <div class="test1">
+                        <div class="div2">Bạn nên xem thêm</div>
+                        <div class="trangchu">Trang chủ</div>
+                        <div class="gioithieu">Giới thiệu</div>
+                        <div class="gioithieu">Sản phẩm</div>
+                        <div class="gioithieu">Tin tức</div>
+                        <div class="gioithieu">Liên hệ</div>
+                    </div>
+                    <div>
+                        <div class="div3">Thông tin khác</div>
+                        <div class="trangchu">Trang chủ</div>
+                        <div class="gioithieu">Giới thiệu</div>
+                        <div class="gioithieu">Sản phẩm</div>
+                        <div class="gioithieu">Tin tức</div>
+                        <div class="gioithieu">Liên hệ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div>
+        <div id="img">
+            <img src="../../images/images/logo.png" alt="">
+            <h1>Thông tin đăng ký</h1>
+        </div>
+        <div class="div-table">
+            <table>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="text" id="email" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td> <label for="">Confirm Password</label></td>
+                    <td><input type="password" id="confirmpassword"></td>
+                </tr>
+                <tr>
+                    <td><label for="image">Choose Image</label></td>
+                    <td><input type="file" id="image" hidden onchange="changeImage()"></td>
+                    <td><img width="100px" id="previewImage" src="" alt=""></td>
+                </tr>
+            </table>
+            <button onclick="signUp()">Đăng ký</button>
+            <a href="/login.html"><button>Đăng nhập</button></a>
+        </div>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

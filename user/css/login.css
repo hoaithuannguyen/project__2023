@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+
+h1 {
+    margin-left: 18%;
+    color: rgb(56, 179, 138);
+}
+
+.div-table {
+    margin-left: 33%;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+    border: 2px solid rgb(56, 179, 138);
+    border-radius: 10px;
+}
+
+td {
+    padding-bottom: 30px;
+    color: rgb(56, 179, 138);
+}
+
+input {
+    border: 1px solid rgb(56, 179, 138);
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button {
+    color: white;
+    margin-top: 10px;
+    margin-left: 210px;
+    background-color: rgb(56, 179, 138);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+table {
+    margin-top: 60px;
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+#email {
+    outline: none;
+}
+
+#email:focus {
+    border: 2px solid rgb(56, 179, 138);
+}
+
+#password {
+    outline: none;
+}
+
+#password:focus {
+    border: 2px solid rgb(56, 179, 138);
+}
